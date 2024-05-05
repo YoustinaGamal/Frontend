@@ -1,0 +1,61 @@
+<!-- <div class="img">
+  <h1 class="">Good to see <span>you again</span> </h1>
+  <form class="form d-flex" [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="container d-flex w-100 p-3 m-2">
+      <div class="login">
+      <h3>Login Here</h3>
+      <input type="text" required placeholder="UserName" class=" form-control m-3" formControlName ="Username">
+      <div *ngIf="loginForm.get('Username')?.touched && loginForm.get('Username')?.status == 'INVALID'" class=" alert alert-danger">
+        <p *ngIf="loginForm.get('Username')?.getError('required')">UserName is Required</p>
+        <p *ngIf="loginForm.get('Username')?.getError('pattern')">UserName Must Start With UPPER CASE</p>
+        <p *ngIf="loginForm.get('Username')?.getError('minlength')">Min Length is 3</p>
+        <p *ngIf="loginForm.get('Username')?.getError('maxlength')">Max Length is 18</p>
+      </div>
+      <input type="password" placeholder="Password" class=" form-control m-3 " formControlName="password">
+      <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.status=='INVALID'" class=" alert alert-danger">
+        <p *ngIf="loginForm.get('password')?.getError('required')">password is Required</p>
+      </div>
+      <button class=" btn m-3">Login</button>
+      <div class="links">
+        <p class=" word">Don't Have An Account ? <a href="\Register" class=" text-decoration-underline ">Sign up</a></p>
+        <a href="\reset-pass" class=" text-decoration-underline word ">Forgot Password ?</a>
+      </div>
+    </div>
+    </div>
+  </form>
+</div> -->
+
+<div class="container ">
+  <div class="item">
+  <div class="contact">
+    <div class="first-text"> Good To See You Again</div>
+    <img src="../../../assets/Images/WhatsApp Image 2024-04-16 at 2.54.09 PM.jpeg" alt="" class="image">
+  </div>
+  <div class="submit-form">
+    <h4 class="third-text text">Login Here</h4>
+      <form class="form" [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="form-group">
+          <input type="text" class="form-control " id="exampleInputName" placeholder="Username"required formControlName ="userName">
+          <div *ngIf="loginForm.get('userName')?.touched && loginForm.get('name')?.status == 'INVALID'" class=" alert alert-danger">
+            <p *ngIf="loginForm.get('userName')?.getError('required')">UserName is Required</p>
+            <!-- <p *ngIf="loginForm.get('userName')?.getError('minlength')">Min Length is 3</p>
+            <p *ngIf="loginForm.get('userName')?.getError('maxlength')">Max Length is 18</p> -->
+        </div>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control "id="exampleInputPhone" placeholder="Password" required formControlName="password">
+          <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.status=='INVALID'" class=" alert alert-danger">
+          <p *ngIf="loginForm.get('password')?.getError('required')">password is Required</p>
+        </div>
+      </div>
+
+        <button type="submit" class="btn">Sign in</button>
+        <div class="links">
+          <p class=" word">Don't Have An Account ? <a href="\register" class=" text-decoration-underline ">Sign up</a></p>
+        <a href="\reset-pass" class=" text-decoration-underline word ">Forgot Password ?</a>
+        </div>
+      </form>
+  </div>
+  </div>
+</div>
+

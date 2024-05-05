@@ -1,0 +1,257 @@
+/*
+h1{
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+  position: relative;
+  margin-top: 2%;
+  margin-left: 7%;
+}
+span{
+  color: #ffffff;
+}
+
+.form{
+  width: 40%;
+  height: 80%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-left: 2%;
+  border-radius: 8%;
+}
+
+.img{
+  flex-wrap: wrap;
+  height: 77vh;
+  background-image: url(../../../assets/Images/M365–compliance-1200x480-1-1-1080x460.png);
+  background-size: cover;
+  border-radius: 2%;
+}
+
+.login{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+input{
+  color: #0c5ab4;
+  outline: none;
+  padding-left: 12px;
+  font-size: 18px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  border:2px solid #0c5ab4;
+}
+
+h3{
+  text-align: center;
+  margin-bottom: 8%;
+  position: relative;
+  font-weight:bold;
+  text-transform: capitalize;
+  color: #0c5ab4;
+}
+
+button{
+  width: 100%;
+  padding: auto;
+  margin-top: 25px;
+  margin-left: 8px;
+  color: #fff;
+  position: relative;
+  outline: none;
+  border:none;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #0c5ab4;
+  box-shadow: -3px -3px 8px #1d6ac0,3px 3px 8px;
+  transition: .5s;
+}
+.btn:hover{
+    background: #1d6ac0;
+}
+
+.links{
+  text-align: center;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+a {
+color: #0c5ab4;
+}
+.word{
+  font-weight:normal;
+}
+
+
+ */
+
+.container
+{
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 45px;
+
+}
+.item
+{
+    width: 80%;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 10px rgba(255, 254, 254, 0.527);
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    z-index: 1000;
+}
+input{
+  color: #0c5ab4;
+  outline: none;
+  padding-left: 12px;
+  font-size: 18px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  border:2px solid #0c5ab4;
+}
+.first-text
+{
+  color: #094283;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+
+.image
+{
+  margin-top: 20px;
+  height: 500px;
+  width: 100%;
+  border-radius: 50px;
+}
+.third-text
+{
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  padding-top: 10px;
+  color: #ffffff;
+
+}
+
+form
+{
+
+    height: 84%;
+    width: 90%;
+    overflow: hidden;
+    color: white;
+    background-color: #0c5ab4de;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 10px rgba(255, 254, 254, 0.616);
+    margin-left: 5%;
+}
+
+
+.form-group
+{
+    height: 30px;
+    width: 95%;
+    margin: 30px 0 30px 10px;
+    position: relative;
+    color: white;
+    margin-right: 5%;
+}
+
+.form-control{
+    width: 100%;
+    height: 160%;
+    background: transparent;
+    border: 2px solid #0c5ab4de;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.btn
+{
+    position: relative;
+    outline: none;
+    border:none;
+    height: 45px;
+    width: 45%;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: #063fa78f;
+    background: #fbfbfb;
+    box-shadow: 3px 3px 8px #dedada,-3px -3px 8px;
+    margin-left: 49%;
+    margin-top: 20%;
+}
+.btn:hover{
+    background: #ffffffa8;
+
+}
+
+@media(max-width:850px){
+    .item{
+        grid-template-columns: 1fr;
+    }
+    .contact{
+        display: none;
+    }
+    .text{
+        font-size: 40px;
+        text-align: center;
+    }
+    .btn{
+        width: 96%;
+        height: 60px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+.contact{
+  background-color: #ffffff;
+}
+
+.links{
+  text-align: center;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin-top: 20%;
+}
+a {
+color: #ffffff;
+}
+.word{
+  font-weight:normal;
+}
+.radioo1{
+  margin-left: 55%;
+}
+.radioo{
+  margin-left: 10px;
+}
+h5{
+  margin-left: 6px;
+  color: rgb(255, 255, 255);
+
+  border-radius: 20px;
+  font-size: x-large;
+}

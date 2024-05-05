@@ -1,0 +1,83 @@
+<!-- <div class="all">
+  <div class="img">
+    <h1 class="h1">Create Account </h1>
+    <form class="form d-flex" [formGroup]="registerForm" (ngSubmit)="register()">
+      <div class="container d-flex w-100 p-3 m-2">
+        <div class="register">
+          <input type="text" required placeholder="UserName" class=" form-control m-3" formControlName ="name">
+        <div *ngIf="registerForm.get('name')?.touched && registerForm.get('Username')?.status == 'INVALID'" class=" alert alert-danger">
+          <p *ngIf="registerForm.get('name')?.getError('required')">UserName is Required</p>
+          <p *ngIf="registerForm.get('name')?.getError('pattern')">UserName Must Start With UPPER CASE</p>
+          <p *ngIf="registerForm.get('name')?.getError('minlength')">Min Length is 3</p>
+          <p *ngIf="registerForm.get('name')?.getError('maxlength')">Max Length is 18</p>
+        </div>
+        <input type="email" placeholder="example@gmail.com" class=" form-control m-3 " formControlName="email">
+        <div *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.status=='INVALID'" class=" alert alert-danger">
+          <p *ngIf="registerForm.get('email')?.getError('required')">An Email is Required</p>
+          <p *ngIf="registerForm.get('email')?.getError('pattern')">Email Must Follow This Structure</p>
+        </div>
+        <input type="password" placeholder="Password" class=" form-control m-3 " formControlName="password">
+        <div *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.status=='INVALID'" class=" alert alert-danger">
+          <p *ngIf="registerForm.get('password')?.getError('required')">password is Required</p>
+        </div>
+        <input type="password" placeholder="Repassword" class=" form-control m-3 " formControlName="repassword">
+        <div *ngIf="registerForm.get('repassword')?.touched && registerForm.get('repassword')?.status=='INVALID'" class=" alert alert-danger">
+          <p *ngIf="registerForm.get('repassword')?.getError('required')">password is Required</p>
+        </div>
+        <button class=" btn m-3">Sign up</button>
+        <div class="links">
+          <p class=" word">Already Have An Account ? <a href="\Login" class=" text-decoration-underline ">Sign in</a></p>
+        </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div> -->
+
+<div class="container ">
+  <div class="item">
+  <div class="contact">
+    <img src="../../../assets/Images/WhatsApp Image 2024-04-16 at 2.54.09 PM.jpeg" alt="" class="image">
+  </div>
+  <div class="submit-form">
+    <h4 class="third-text text">Create An Account</h4>
+      <form class="form" [formGroup]="registerForm" (ngSubmit)="register()">
+        <div class="form-group">
+          <input type="text" class="form-control " id="exampleInputName" placeholder="Username"required formControlName ="userName">
+          <div *ngIf="registerForm.get('userName')?.touched && registerForm.get('userName')?.status == 'INVALID'" class=" alert alert-danger">
+            <p *ngIf="registerForm.get('userName')?.getError('required')">UserName is Required</p>
+            <p *ngIf="registerForm.get('userName')?.getError('minlength')">Min Length is 3</p>
+            <p *ngIf="registerForm.get('userName')?.getError('maxlength')">Max Length is 18</p>
+        </div>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control " id="exampleInputEmail1" placeholder="Email" required formControlName="email">
+          <div *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.status=='INVALID'" class=" alert alert-danger">
+          <p *ngIf="registerForm.get('email')?.getError('required')">An Email is Required</p>
+          <p *ngIf="registerForm.get('email')?.getError('pattern')">Email Must Follow This Structure</p>
+        </div>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control "id="exampleInputPassword" placeholder="Password" required formControlName="password">
+          <div *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.status=='INVALID'" class=" alert alert-danger">
+          <p *ngIf="registerForm.get('password')?.getError('required')">password is Required</p>
+        </div>
+        </div>
+        <div class="form-group2">
+          <h5 class="">Investor OR Youth:-</h5>
+        <div>
+          <input id="Label1" type="radio" name="isInvestor" value="Investor" class="form-group1 radioo" id="exampleInputisInvestor" required formControlName="isInvestor" >
+          <label for="Label1" class="labelI">Investor</label>
+          <input id="Label2" type="radio" name="isInvestor" value="Youth" class="form-group1 radioo1" id="exampleInputisInvestor "formControlName="isInvestor" >
+          <label for="Label2" class="labelY">Youth</label>
+        </div>
+        </div>
+
+        <input type="submit"class="btn" value="Sign up">
+        <div class="links">
+          <p class=" word">Already Have An Account ? <a href="\login" class=" text-decoration-underline ">Sign in</a></p>
+        </div>
+      </form>
+  </div>
+  </div>
+</div>
